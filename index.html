@@ -1,0 +1,37 @@
+---
+layout: default
+title: Home
+---
+{% include timeLine.html %}
+<!--<h1>Hallo zur neuen index.html filebu</h1>-->
+
+<big>Von der Erschaffung Adams bis zum Auszug aus Ägypten</big>
+<ul class="timeline">
+    {% for date in site.data.timeLine %}
+      <li class="timeline-blocks">
+        <a>
+          <div class = "dir-r">
+            <h1>{{ date.date }}</h1>
+            {{ date.description }}
+          </div>
+          <div class="timeline-picture">
+            <img src={{date.picture}} alt="timeline" onerror="this.onerror=null; this.remove()" />
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+</ul>
+<ul class="timeline">
+	<li id="1" class="timeline-blocks">
+		<!--<img class="timeline-picture" src="img/adamEve.jpg" alt="timeline" onerror="this.onerror=null; this.remove()" />-->
+		<div class="timeline-picture" (click)="onSelect(event)">
+			<!--<img src="img/adamEve.jpg" alt="timeline" onerror="this.onerror=null; this.remove()" />-->
+			<img src="img/adamEve.jpg" alt="timeline" onerror="this.onerror=null; this.remove()" />
+        </div>
+		
+		<div class="dir-r">
+			<h1>4023 v.u.Z</h1>
+			<p>Jehova erschafft erst Adam und kurz danach Eva. (1.Mose 1:26)</p>
+		</div>
+	</li>
+</ul>
