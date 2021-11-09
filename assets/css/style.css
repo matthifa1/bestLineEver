@@ -318,7 +318,7 @@ img {
 }
 */
 
-/*.bg_line:after {
+.bg_line:after {
   position: absolute;
   left: 10%;
   top: 0;
@@ -329,14 +329,14 @@ img {
   margin-left: -3px;
   background: #d7e4ed;
   z-index: -1;
-}*/
+}
 
-.bg_line {
+/*.bg_line {
   background-image: linear-gradient(#000, #000);
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;
-
+*/
 /* Style the container with a rounded border, grey background and some padding and margin */
 .container {
   border: 2px solid #ccc;
