@@ -43,7 +43,6 @@ img {
   margin-top: 5em;
   padding-bottom: 2em;
   padding-left: 0;
-  z-index: 0;
 }
 
 .timeline:before {
@@ -56,7 +55,7 @@ img {
   height: 100%;
   margin-left: -3px;
   background: #d7e4ed;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* Text Boxes */
