@@ -5,6 +5,15 @@ title: Home
 {% include timeLine.html %}
 <!--<h1>Hallo zur neuen index.html filebu</h1>-->
 
+{% for date in site.data.timeLine %}
+<div class="container">
+  <img src={{date.picture}} alt="timeline" style="width:90px" onerror="this.onerror=null; this.remove()">
+  <p><span>{{date.date}}</span> </p>
+  <p>{{ date.description }}</p>
+</div>
+{% endfor %}
+
+
 <!--<big>Von der Erschaffung Adams bis zum Auszug aus Ägypten</big>
 <ul class="timeline">
     {% for date in site.data.timeLine %}
@@ -21,10 +30,3 @@ title: Home
       </li>
     {% endfor %}
 </ul>-->
-{% for date in site.data.timeLine %}
-<div class="container">
-  <img src={{date.picture}} alt="timeline" style="width:90px" onerror="this.onerror=null; this.remove()">
-  <p><span>{{date.date}}</span> </p>
-  <p>{{ date.description }}</p>
-</div>
-{% endfor %}
