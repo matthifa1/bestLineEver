@@ -36,7 +36,7 @@ plugins:
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: "bestLineEver/assets/img"
     values:
       image: true
 
