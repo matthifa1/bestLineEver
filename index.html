@@ -21,8 +21,10 @@ title: Home
       </li>
     {% endfor %}
 </ul>
+{% for date in site.data.timeLine %}
 <div class="container">
-  <img src="bandmember.jpg" alt="Avatar" style="width:90px">
-  <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
-  <p>John Doe saved us from a web disaster.</p>
+  <img src={{date.picture}} alt="timeline" style="width:90px" onerror="this.onerror=null; this.remove()">
+  <p><span>{{date.date}}</span> </p>
+  <p>{{ date.description }}</p>
 </div>
+{% endfor %}
