@@ -7,13 +7,11 @@ title: Home
 
 
 {% for date in site.data.timeLine %}
-<ul class="bg_line">
 <div class="container">
   <img src={{date.picture}} alt="timeline" style="width:90px" onerror="this.onerror=null; this.remove()">
   <p><span>{{date.date}}</span> </p>
   <p>{{ date.description }}</p>
 </div>
-</ul>
 {% endfor %}
 
 <!--<big>Von der Erschaffung Adams bis zum Auszug aus Ägypten</big>
